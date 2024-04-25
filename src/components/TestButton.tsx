@@ -1,8 +1,9 @@
 'use client'
 
-export const TestButton = () => {
-    return <div>
-        Test Button Hello world
-        <button onClick={()=>alert('Clicked me')}>Click Me</button>
-    </div>
+type TestButtonProps = {
+    title: string
+}
+
+export const TestButton = ({title}: TestButtonProps) => {
+    return <button onClick={()=>alert('Clicked me')}>{title}</button>
 } 
