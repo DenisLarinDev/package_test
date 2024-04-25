@@ -1,13 +1,20 @@
 {
-  "name": "package_test",
+  "name": "@denis__larin/package_test",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DenisLarinDev/package_test"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
